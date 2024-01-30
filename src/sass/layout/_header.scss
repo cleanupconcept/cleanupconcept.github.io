@@ -64,6 +64,7 @@ header {
 
                 @include respondTo(md) {
                     font-size: 1rem;
+                    line-height: 1rem;
                 }
 
                 strong {
