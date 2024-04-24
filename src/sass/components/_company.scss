@@ -1,0 +1,60 @@
+#companySection {
+    width: fit-content;
+    margin: 0 auto;
+
+    h1 {
+        color: #0671c4;
+        text-align: center;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        margin: 6rem auto 2rem auto;
+        
+        @include respondTo(sm) {
+            font-size: 1.25rem;
+        }
+    
+        @include respondTo(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    h3 {
+        color: #0671c4;
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin: 2rem auto 4rem auto;
+
+        @include respondTo(sm) {
+            font-size: 1.25rem;
+        }
+    }
+
+    #companyCertificationContainer {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem 0;
+
+        @include respondTo(sm) {
+            flex-direction: row;
+            gap: 0 4rem;
+        }
+
+        img {
+            width: 320px;
+            border-radius: 0.5rem;
+            box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(#000, 0.4);
+            border: solid #eee 2px;
+            
+            @include respondTo(sm) {
+                width: 500px;
+            }
+        }
+    }
+    
+    .companySectionP {
+        text-align: center;
+    }
+}
