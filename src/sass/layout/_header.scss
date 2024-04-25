@@ -27,7 +27,6 @@ header {
             
             @include respondTo(md) {
                 width: 100%;
-                margin-left: 4rem;
             }
 
             #logo {
@@ -53,19 +52,6 @@ header {
                 border-bottom-right-radius: 0.5rem;
                 line-height: 0.75rem;
                 font-size: 0.75rem;
-
-                @media screen and (min-width: 0px) and (max-width: 359px) {
-                    font-size: 0.5rem;
-                }
-                
-                @include respondTo(sm) {
-                    font-size: 0.85rem;
-                }
-
-                @include respondTo(md) {
-                    font-size: 1rem;
-                    line-height: 1rem;
-                }
 
                 strong {
                     color: white;

@@ -10,28 +10,20 @@
     justify-content: center;
     align-items: center;
     display: none;
+    font-size: 0.75rem;
     
     @include respondTo(md) {
-        font-size: 0.85rem;
         position: inherit;
         height: inherit;
         display: block;
     }
 
     ul {
-        width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 0 2.5rem;
         
-        @include respondTo(sm) {
-            gap: 0 8rem;
-        }
-
         @include respondTo(md) {
-            gap: 0 4rem;
-            margin-right: 4rem;
+            gap: 0 2rem;
         }
 
         li {
@@ -64,10 +56,15 @@
 
                 .navbarTxt {
                     display: none;
-
+                    text-align: center;
+                    
                     @include respondTo(md) {
                         display: block;
                     }
+                }
+
+                .lg {
+                    min-width: 190px;
                 }
 
                 .navbarIcons {
