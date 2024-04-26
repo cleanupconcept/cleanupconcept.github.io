@@ -33,7 +33,7 @@
         #priceGridMainContainer {
             display: grid;
             gap: 1rem 0;
-            font-size: 0.85rem;
+            // font-size: 0.85rem;
             text-transform: none;
             
             @include respondTo(sm) {
@@ -48,17 +48,22 @@
 
                 p {
                     margin: 1rem 0;
-                    color: #cacaca;            
+                    color: #d6d6d6;            
                 }
 
                 li {
                     margin: 0.5rem 0;
                     display: flex;
-                    align-items: center;
+                    font-size: smaller;
+
+                    @include respondTo(sm) {
+                        align-items: center;
+                    }
 
                     img {
                         width: 32px;
-                        margin: 0.5rem;
+                        height: 32px;
+                        margin: 0 0.5rem 0 0;
                     }
                 }
             }
@@ -104,7 +109,7 @@
                         border: solid #eee 2px;
                         border-radius: 0.5rem;
                         padding: 0.5rem;
-                        font-size: 0.65rem;
+                        font-size: smaller;
                         width: 125px;
                         box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
 
