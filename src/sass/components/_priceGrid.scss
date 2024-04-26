@@ -54,7 +54,7 @@
                 li {
                     margin: 0.5rem 0;
                     display: flex;
-                    font-size: smaller;
+                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
                     @include respondTo(sm) {
                         align-items: center;
