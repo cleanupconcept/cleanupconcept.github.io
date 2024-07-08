@@ -8,7 +8,7 @@
         text-align: center;
         color: #0671C4;
         
-        @include respondTo(md) {
+        @include respondTo(sm) {
             text-align: center;
             margin-top: 6rem;
             font-size: 1.5rem;

@@ -48,7 +48,7 @@
             box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(#000, 0.4);
             border: solid #eee 2px;
             
-            @include respondTo(sm) {
+            @include respondTo(md) {
                 width: 500px;
             }
         }
