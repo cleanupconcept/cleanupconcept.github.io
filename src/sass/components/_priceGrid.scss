@@ -16,246 +16,38 @@
     }
 
     #priceGridContainer {
-        h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-
-            @include respondTo(md) {
-                font-size: 1.15rem;                
-            }
-        }
-
-        .fit {
-            height: fit-content;
-        }
-
-        #priceGridMainContainer {
-            display: grid;
-            gap: 1rem 0;
-            // font-size: 0.85rem;
-            text-transform: none;
-            
-            @include respondTo(sm) {
-                gap: 1rem;
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .priceGridDescription {
-                h4 {
-                    margin-left: 2rem;
-                }
-
-                p {
-                    margin: 1rem 0;
-                    color: #d6d6d6;            
-                }
-
-                li {
-                    margin: 0.5rem 0;
-                    display: flex;
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-                    @include respondTo(sm) {
-                        align-items: center;
-                    }
-
-                    img {
-                        width: 32px;
-                        height: 32px;
-                        margin: 0 0.5rem 0 0;
-                    }
-                }
-            }
-
-            .priceGridContainers {
-                border: #eee solid 2.5px;
-                border-radius: 0.5rem;
-                padding: 1rem;
-                box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
-
-                h3 {
-                    text-align: center;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    border: solid #eee 2px;
-                    padding: 0.5rem;
-                    border-radius: 0.5rem;
-                    background-color: #111;
-                    width: fit-content;
-                    margin: 1rem auto;
-                    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
-
-                    @include respondTo(sm) {
-                        font-size: 1.25rem;
-                    }
-
-                    @include respondTo(md) {
-                        font-size: 1.5rem;
-                    }
-                }
-
-                .priceGridPriceContainers {
-                    text-transform: uppercase;
-                    margin-top: 1rem;
-                    display: grid;
-                    gap: 0.5rem;
-                    grid-template-columns: 1fr 1fr;
-                    justify-items: center;
-
-                    .priceGridPriceTitle {
-                        background-color: black;
-                        text-align: center;
-                        border: solid #eee 2px;
-                        border-radius: 0.5rem;
-                        padding: 0.5rem;
-                        font-size: smaller;
-                        width: 125px;
-                        box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.6);
-
-                        @include respondTo(md) {
-                            width: 250px;
-                        }
-
-                        .priceGridPrice {
-                            color: #0671C4;
-                            font-size: 1rem;
-
-                            @include respondTo(sm) {
-                                font-size: 1.25rem;
-                            }
-                        }
-                    }
-                }
-
-                // .priceGridDescriptionCta {
-                //     color: white;
-                //     text-decoration: none;
-                //     text-transform: uppercase;
-                //     background-color: #0671C4;
-                //     border-radius: 0.25rem;
-                //     padding: 0.25rem;
-                //     transition: 0.3s;
-                //     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-                //     font-size: 0.5rem;
-                //     width: fit-content;
-                //     margin: 0 auto;
-                //     margin-top: 1rem;
-                    
-                //     @include respondTo(sm) {
-                //         font-size: 0.75rem;
-                //         padding: 0.5rem;
-                //     }
-                    
-                //     @include respondTo(md) {
-                //         font-size: 1rem;
-                //         padding: 0.75rem;
-                        
-                //         &:hover {
-                //             transition: 0.3s;
-                //             color: #333;
-                //         }
-                //     }
-                // }
-            }
-        }
-
-        // table {
-        //     margin: 0 auto;
-        //     border-collapse: separate;
-        //     border-radius: 10px;
-        //     border-spacing: 0.5rem;
-        //     font-size: 0.75rem;
+        // h2 {
+        //     text-align: center;
         //     margin-bottom: 2rem;
-            
+        //     text-transform: uppercase;
+
         //     @include respondTo(md) {
-        //         border-spacing: 1rem;
-        //         font-size: 1.25rem;                
-        //     }
-
-        //     .priceGridTitles {
-        //         font-size: .6rem;
-
-        //         @include respondTo(sm) {
-        //             font-size: 0.8rem;
-        //         }
-
-        //         @include respondTo(md) {
-        //             font-size: 1rem;
-        //         }
-        //     }
-
-        //     th {
-        //         font-size: 1rem;
-
-        //         @include respondTo(md) {
-        //             font-size: 1.1rem;
-        //         }
-        //     }
-
-        //     th, .prices {
-        //         color: #0671C4;
-        //     }
-
-        //     th, td {
-        //         background-color: #222;
-        //     } 
-
-        //     .prices {
-        //         display: flex;
-        //         flex-direction: column;
-        //         justify-content: center;
-        //         align-items: center;
-        //         font-size: 1rem;
-                
-        //         @include respondTo(sm) {
-        //             flex-direction: row;
-        //         }
-
-        //         @include respondTo(md) {
-        //             font-size: 1.25rem;
-        //         }
-        //     }
-
-        //     .priceGridAnchor {
-        //         color: white;
-        //         text-decoration: none;
-        //         text-transform: uppercase;
-        //         background-color: #0671C4;
-        //         border-radius: 0.25rem;
-        //         padding: 0.25rem;
-        //         transition: 0.3s;
-        //         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-        //         font-size: 0.5rem;
-        //         margin-top: 0.5rem;
-                
-        //         @include respondTo(sm) {
-        //             font-size: 0.75rem;
-        //             margin-left: 2rem;
-        //             padding: 0.5rem;
-        //             margin-top: 0;
-        //         }
-                
-        //         @include respondTo(md) {
-        //             font-size: 1rem;
-        //             padding: 0.75rem;
-                    
-        //             &:hover {
-        //                 transition: 0.3s;
-        //                 color: #333;
-        //             }
-        //         }
+        //         font-size: 1.15rem;                
         //     }
         // }
 
-        // .tableElements {
-        //     border: solid white 2.5px;
-        //     border-radius: 0.75rem;
-        //     padding: 0.5rem;
+        #priceFlyersContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin: 0 auto;
+
+            @media (min-width: 1300px) {
+                flex-direction: row;
+                justify-content: space-around;
+
+                img {
+                    max-width: 600px;
+                }
             
-        //     @include respondTo(md) {
-        //         padding: 1rem;
-        //     }
-        // }
+            }
+            
+            .priceGridImg {
+                display: block;
+                box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.6);
+                border-radius: 0.25rem;
+            }
+        }
     }
 }
